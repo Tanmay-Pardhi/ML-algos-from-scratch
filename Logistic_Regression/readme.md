@@ -11,14 +11,14 @@ Fitting -
 3. Set bias as zero
 4. For each num_iteration:
      1. Start by calculating the linear prediction linear, linear = (X.weights) + bias (y=mx+c)
-     2. Next convert this linear prediction into probability by using the sigmoid function
-  Sigmoid function = 1/(1+e^-x) This will give us a value between 0 and 1
-    3. Next we will have to calculate the gradients for the weights and the bias
-      dw = (1/num_samples) * (X_transpose.(y_pred - y))
-      db = (1/num_samples) * Summation(y_pred - y)
-    4. Update weights and bias
-       weights = weights - learning_rate*dw
-       bias = bias - learning_rate*db
+     2. Next convert this linear prediction into probability by using the sigmoid function <br/>
+        Sigmoid function = 1/(1+e^-x) This will give us a value between 0 and 1
+    3. Next we will have to calculate the gradients for the weights and the bias <br/>
+       dw = (1/num_samples) * (X_transpose.(y_pred - y))<br/>
+       db = (1/num_samples) * Summation(y_pred - y)<br/>
+    4. Update weights and bias<br/>
+       weights = weights - learning_rate*dw<br/>
+       bias = bias - learning_rate*db<br/>
 
 Prediction - For unseen data (X) Based on the finalized weights and bias first calculate the linear prediction
 1. linear = (X.weights)+bias
